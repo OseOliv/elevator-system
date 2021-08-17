@@ -3,11 +3,12 @@ Desafio para desenvolvedores full-stack React
 
 ## Objetivo
 
-Desenvolver uma aplicação fullstack que simule a lógica de funcionamento de um elevador, com pelo menos três views:
+Desenvolver uma aplicação fullstack que simule a lógica de funcionamento de um elevador, com pelo menos três funcionalidades:
 
-1. Operação do elevador: posição atual, formulario para pedir, lista de pedidos atuais <br />
-2. Histórico de pedidos <br />
-3. Log de movimentação do elevador <br />
+1. Operação do elevador - Representa a visão de um usuário de elevedor na vida real: apresenta posição atual (qual andar), formulario para chamada e a lista de chamadas pendentes. <br /><br />
+1.1. Uma vez que o elevador pare em um andar, deve-se atualizar as chamadas do mesmo, marcando como concluídas aquelas que estão de acordo com o sentido atual do elevador <br /><br />
+2. Histórico de chamadas - Quando, em qual andar, e para qual direção foi feito a chamada. Indicar também se a chamada já foi atendida ou não <br />
+3. Log de movimentação do elevador - O registro do percurso do elevador, indicado por cada parada que ele fez em um andar e quando ocorreu<br />
 
 ## Critérios técnicos
 
