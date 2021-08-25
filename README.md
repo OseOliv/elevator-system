@@ -7,7 +7,7 @@ Desenvolver uma aplicação fullstack que simule a lógica de funcionamento de u
 
 1. Operação do elevador - Representa a visão de um usuário de elevedor na vida real: apresenta posição atual (qual andar), formulario para chamada e a lista de chamadas pendentes. A forma de apresentar essas informações é livre para sua criatividade <br /><br />
 1.1. Uma vez que o elevador pare em um andar, deve-se atualizar as chamadas do mesmo, marcando como concluídas aquelas que estão de acordo com o sentido atual do elevador <br /><br />
-2. Histórico de chamadas - Quando, em qual andar, e para qual direção foi feita a chamada. Apresentar também se a chamada já foi atendida ou não <br />
+2. Histórico de chamadas - Quando chamou o elevador, em qual andar, e para qual direção (sobe/desce) foi feita a chamada. Apresentar também se a chamada já foi atendida ou não <br />
 3. Log de movimentação do elevador - O registro do percurso do elevador, indicado por cada parada que ele fez, direção atual, qual andar e quando ocorreu<br />
 
 ## Critérios técnicos
