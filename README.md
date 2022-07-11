@@ -15,7 +15,7 @@ Desenvolver uma aplicação fullstack que simule a lógica de funcionamento de u
 - Utilize React, de preferência na versão mais recente
 - Utilize pelo menos um framework CSS
 - O elevador precisa funcionar corretamente de acordo com a experiência da vida real, mas você está livre para implementá-lo da melhor maneira que você imaginar! Avaliaremos qualidade da arquitetura, maturidade da lógica e organização de código
-- O histórico precisa ser salvo em um banco de dados e acessado através de um backend que exponha uma API REST, usando qualquer tecnologia à sua escolha. Não precisa ser nada complexo! Pode usar Firebase ou tecnologia similar. O objetivo é reconhecer se você domina os fundamentos de BD e sabe consumir uma API REST 
+- O histórico precisa ser salvo em um banco de dados e acessado através de um backend que exponha uma API REST, usando qualquer tecnologia à sua escolha. Não precisa ser nada complexo! Pode usar Firebase ou tecnologia similar. O objetivo é reconhecer se você domina os fundamentos de BD e sabe consumir uma API REST. Você pode até mesmo usar uma ferramenta como a https://miragejs.com/ para simular uma API.
 - Testes funcionais e/ou unitários são opcionais, mas contam pontos!
 
 ## Critérios funcionais
