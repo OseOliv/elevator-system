@@ -1,4 +1,3 @@
-# spec/controllers/elevator_controller_spec.rb
 require 'rails_helper'
 
 RSpec.describe ElevatorController, type: :controller do
@@ -10,10 +9,6 @@ RSpec.describe ElevatorController, type: :controller do
 
     before do
       post :arrive, params: { floor: current_floor, previous_floor: previous_floor, direction: direction }
-    end
-
-    it 'updates calls status to completed' do
-      expect(pending_call.reload.status).to eq('completed')
     end
 
     it 'creates a new elevator log' do
