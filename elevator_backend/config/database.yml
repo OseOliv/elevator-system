@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: elevador_backend_development
+  database: elevator_backend_development
 
 test:
   <<: *default
-  database: elevador_backend_test
+  database: elevator_backend_test
 
 production:
   <<: *default
-  database: elevador_backend_production
-  username: elevador_backend
+  database: elevator_backend_production
+  username: elevator_backend
   password: <%= ENV['ELEVADOR_DATABASE_PASSWORD'] %>
