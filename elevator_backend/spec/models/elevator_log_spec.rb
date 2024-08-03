@@ -17,5 +17,4 @@ RSpec.describe ElevatorLog, type: :model do
     expect(elevator_log).not_to be_valid
   end
 
-  # Adicione mais testes conforme necessário
 end
