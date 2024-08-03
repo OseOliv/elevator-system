@@ -1,7 +1,7 @@
+
 FactoryBot.define do
   factory :call do
     floor { 1 }
-    direction { "MyString" }
-    status { "MyString" }
+    status { 'pending' }
   end
 end
