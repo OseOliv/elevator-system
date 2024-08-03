@@ -11,7 +11,7 @@ class CallsController < ApplicationController
     @call.status = 'pending'
 
     if @call.save
-      ElevatorLog.create(floor: @call.floor, direction: @call.direction, timestamp: Time.current)
+      create_elevator_log(@call)
       render json: @call, status: :created
     else
       render json: @call.errors, status: :unprocessable_entity
@@ -34,5 +34,9 @@ class CallsController < ApplicationController
 
   def call_params
     params.require(:call).permit(:floor, :direction, :status)
+  end
+
+  def create_elevator_log(call)
+    ElevatorLog.create(floor: call.floor, direction: call.direction, timestamp: Time.current)
   end
 end
