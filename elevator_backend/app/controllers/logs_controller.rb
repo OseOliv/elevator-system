@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class LogsController < ApplicationController
   def index
     @logs = ElevatorLog.all
@@ -8,10 +6,11 @@ class LogsController < ApplicationController
 
   def create
     @log = ElevatorLog.new(log_params)
+
     if @log.save
       render json: @log, status: :created
     else
-      render json: @log.errors, status: :unprocessable_entity
+      render json: { errors: @log.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
