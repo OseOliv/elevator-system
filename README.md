@@ -1,34 +1,56 @@
-# desafio-react
-Desafio para desenvolvedores full-stack React
+# Elevator System
 
-## Objetivo
+## Descrição
 
-Desenvolver uma aplicação fullstack que simule a lógica de funcionamento de um elevador, com pelo menos três funcionalidades:
+O Elevator System é uma aplicação para simulação de um sistema de elevadores. Inclui um frontend em React e um backend em Ruby on Rails.
 
-1. Operação do elevador - Representa a visão de um usuário de elevedor na vida real: apresenta posição atual (qual andar), formulario para chamada e a lista de chamadas pendentes. A forma de apresentar essas informações é livre para sua criatividade <br /><br />
-1.1. Uma vez que o elevador pare em um andar, deve-se atualizar as chamadas do mesmo, marcando como concluídas aquelas que estão de acordo com o sentido atual do elevador <br /><br />
-2. Histórico de chamadas - Quando chamou o elevador, em qual andar, e para qual direção (sobe/desce) foi feita a chamada. Apresentar também se a chamada já foi atendida ou não <br />
-3. Log de movimentação do elevador - O registro do percurso do elevador, indicado por cada parada que ele fez, direção atual, qual andar e quando ocorreu<br />
+## Tecnologias
 
-## Critérios técnicos
+- **Frontend:** React com Vite
+- **Backend:** Ruby on Rails
+- **Banco de Dados:** PostgreSQL
 
-- Utilize React, de preferência na versão mais recente
-- Utilize pelo menos um framework CSS
-- O elevador precisa funcionar corretamente de acordo com a experiência da vida real, mas você está livre para implementá-lo da melhor maneira que você imaginar! Avaliaremos qualidade da arquitetura, maturidade da lógica e organização de código
-- O histórico precisa ser salvo em um banco de dados e acessado através de um backend que exponha uma API REST, usando qualquer tecnologia à sua escolha. Não precisa ser nada complexo! Pode usar Firebase ou tecnologia similar. O objetivo é reconhecer se você domina os fundamentos de BD e sabe consumir uma API REST. Você pode até mesmo usar uma ferramenta como a https://miragejs.com/ para simular uma API.
-- Testes funcionais e/ou unitários são opcionais, mas contam pontos!
+## Requisitos
 
-## Critérios funcionais
+- **Ruby:** 3.2.4
+- **Rails:** 7.1.3
+- **PostgreSQL:** 16
+- **Node.js** v22
 
-- Você está livre para ser o mais criativo possível estetica e funcionalmente, inclusive criando mais funcionalidades, se desejar. Surpreender é um diferencial!
-- Seu código deve estar pronto para ser executado e contar com as orientações necessárias para baixar e rodar. Utilizar Docker é um ponto a mais
-- Caso você entregue uma versão do seu projeto online, mostra que você é capaz de entregar um projeto de ponta a ponta
+## Instruções para Rodar o Projeto
 
-## Como entregar seu projeto
+### Backend
 
-1. Crie uma nova branch neste reposítório e comece a trabalhar
-2. Quando terminar, abra um Pull Request (PR)
-3. Ao terminar adicione neste README todas as orientações necessárias para que o avaliador rode seu projeto. Observações e comentários podem ser adicionados aqui também
-4. Entre em contato com seu avaliador para tratar sobre prazos a avisar sobre a entrega
+1. **Clone o repositório:**
+
+- git clone git@github.com:tdb-devs-recrutamento/elevador-full-stack-OseOliv.git
+- cd elevator_backend
+
+2. **Instale as dependências do Ruby:**
+
+- bundle install
+
+3. **Configure o banco de dados:**
+
+- rails db:create
+- rails db:migrate
+
+4. **Inicie o servidor Rails:**
+
+- rails server
+
+### Frontend
+
+1. **Navegue até a pasta do frontend:**
+
+- cd elevator-frontend
+
+2. **Instale as dependências do Node.js:**
+
+- npm install
+
+3. **Inicie o servidor de desenvolvimento:**
+
+- npm run dev
 
 
